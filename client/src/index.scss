@@ -15,8 +15,8 @@ code {
 .App h1 {
   text-align: center;
   padding: 20px 0;
-  background-color: rgb(230, 228, 228);
-  color: #415a4e;
+  background-color: #ffffff;
+  color: #1e90ff;
   margin: 0;
 }
 
@@ -47,23 +47,24 @@ code {
   margin: 10px 0;
   padding: 0 10px;
   height: 150px;
+  background-color: #ff0000;
 }
 
 .card h2 {
   font-size: 22px;
   font-weight: 300;
-  color: rgb(71, 69, 69);
+  color: #1e90ff;
   font-family: sans-serif;
   margin: 0px 0;
 }
 
 .card span {
   font-weight: 500;
-  color: rgb(119, 63, 18);
+  color: #ffffff;
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: #ffffff;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -79,7 +80,7 @@ code {
 }
 
 .toggle {
-  background: #383635;
+  background: #ff0000;
   border-radius: 50px;
   height: 20px;
   left: 0;
@@ -94,25 +95,26 @@ code {
 
 .dark-mode {
   .userList-container {
-    background-color: black;
+    background-color: #00008b;
   }
 
   #dark-mode-text {
-    color: #f7f7f7;
+    color: #ffffff;
   }
 
   h1 {
-    background: rgb(228, 188, 13);
+    background: #00008b;
+    color: #ffffff;
   }
 
   .card {
-    background: rgba(29, 31, 31, 0.5);
+    background: #1e90ff;
 
     h2 {
-      color: #b8b9b9;
+      color: #ff0000;
 
       span {
-        color: rgb(175, 163, 94);
+        color: #ffffff;
       }
     }
   }
