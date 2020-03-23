@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import UserList from "./components/UserList";
+export default class App extends Component {
+  state = {
+    data: []
+  };
+
+  componentDidMount() {
+    fetch("http://localhost:5000/api/players")
+      .then(response => response.json())
+      .then(dataList => this.setState({ data: dataList }))
+      .catch(err => console.error(err));
+  }
+
+  render() {
+    return (
+      <div className="App" data-testid="app">
+        <h1>
+          The Women's World Cup players ranked by search interest{" "}
+          <span>June-July 2019</span>
+        </h1>
+
+        <UserList userList={this.state.data} />
+      </div>
+    );
+  }
 }
-
-export default App;
