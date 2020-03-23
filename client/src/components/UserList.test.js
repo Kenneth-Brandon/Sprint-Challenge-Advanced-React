@@ -4,7 +4,7 @@ import "@testing-library/jest-dom/extend-expect";
 
 import UserList from "./UserList";
 
-const mockData = [{ name: "rabah", country: "algeria", searches: 100 }];
+const mockData = [{ name: "Kenneth", country: "USA", searches: 100 }];
 
 it("renders a dark mode button", () => {
   const { getByTestId } = render(<UserList userList={mockData} />);
